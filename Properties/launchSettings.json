@@ -1,28 +1,27 @@
 {
-  "profiles": {
-    // Debug project within Teams
-    "Microsoft Teams (browser)": {
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "launchUrl": "https://teams.microsoft.com/l/app/%TEAMSAPPID%?installAppPackage=true&webjoin=true&appTenantId=%TENANTID%&login_hint=%USERNAME%",
-      "applicationUrl": "https://localhost:44302;http://localhost:2544",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "hotReloadProfile": "aspnetcore"
-    }
-    //// Uncomment following profile to debug project only (without launching Teams)
-    //,
-    //"Start Project (not in Teams)": {
-    //  "commandName": "Project",
-    //  "dotnetRunMessages": true,
-    //  "launchBrowser": true,
-    //  "applicationUrl": "https://localhost:44302;http://localhost:2544",
-    //  "environmentVariables": {
-    //    "ASPNETCORE_ENVIRONMENT": "Development"
-    //  },
-    //  "hotReloadProfile": "aspnetcore"
-    //}
-  }
+	"profiles": {
+		"Microsoft Teams (browser)": {
+			"commandName": "Project",
+			"launchBrowser": true,
+			"launchUrl": "https://teams.microsoft.com/l/app/00b4853f-4c0b-40da-b115-f8b3fbc5fda4?installAppPackage=true&webjoin=true&appTenantId=72f988bf-86f1-41af-91ab-2d7cd011db47&login_hint=zhihuan@microsoft.com",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			},
+			"dotnetRunMessages": true,
+			"applicationUrl": "https://localhost:44302;http://localhost:2544",
+			"hotReloadProfile": "aspnetcore"
+		},
+		"Docker": {
+			"commandName": "Docker",
+			"launchBrowser": true,
+			"launchUrl": "https://teams.microsoft.com/l/app/00b4853f-4c0b-40da-b115-f8b3fbc5fda4?installAppPackage=true&webjoin=true&appTenantId=72f988bf-86f1-41af-91ab-2d7cd011db47&login_hint=zhihuan@microsoft.com",
+			"environmentVariables": {
+				"ASPNETCORE_URLS": "https://+:443;http://+80"
+			},
+			"publishAllPorts": true,
+			"useSSL": true,
+			"sslPort": 44302,
+			"httpPort":  2544
+		}
+	}
 }
